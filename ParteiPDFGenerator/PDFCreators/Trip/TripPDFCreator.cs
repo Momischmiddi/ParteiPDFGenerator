@@ -30,12 +30,14 @@ namespace CloudbobsPDFRendering.PDFCreators
             CreateInfoListing(model, headerResult.Item2);
             CreateMemberList(model, document);
 
-            if(headerResult.Item1 != null)
+            var result = await PDFBlobHelper.AddPdfAsync(document);
+
+            if (headerResult.Item1 != null)
             {
                 File.Delete(headerResult.Item1);
             }
 
-            return await PDFBlobHelper.AddPdfAsync(document);
+            return result;
         }
 
         private static void CreateMemberList(TripPDFModel model, Document document)
@@ -107,22 +109,25 @@ namespace CloudbobsPDFRendering.PDFCreators
             section.AddParagraph(model.Destination, "Heading1");
             section.AddParagraph();
 
+            string fileName = null;
+
             try
             {
-                string file = Path.GetFileName(model.ImageBlobURL);
+                fileName = Path.GetFileName(model.ImageBlobURL);
                 WebClient cln = new WebClient();
-                cln.DownloadFile(model.ImageBlobURL, file);
+                cln.DownloadFile(model.ImageBlobURL, fileName);
 
-                var image = section.AddImage(file);
+                var image = section.AddImage(fileName);
                 image.Width = "15.0cm";
                 image.LockAspectRatio = true;
             } 
             catch(Exception e)
             {
                 Console.WriteLine(e.Message);
+                fileName = null;
             }
             
-            return (null, section);
+            return (fileName, section);
         }
     }
 }
