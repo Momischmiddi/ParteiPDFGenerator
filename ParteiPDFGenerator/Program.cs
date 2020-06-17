@@ -1,18 +1,17 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Aufgabe_2.ExportManagers;
+using CloudbobsPDFRendering.PDFCreators;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
-namespace ParteiPDFGenerator
+namespace CloudbobsPDFRendering
 {
     public class Program
     {
         public static void Main(string[] args)
         {
+            CustomFontResolver.Apply();
+            PDFBlobHelper.Setup();
+
             CreateHostBuilder(args).Build().Run();
         }
 
