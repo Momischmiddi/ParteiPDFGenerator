@@ -4,13 +4,12 @@ FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
-
-RUN apt-get update \
-&& apt-get install -y --allow-unauthenticated \
-    libc6-dev \
-    libgdiplus \
-    libx11-dev \
- && rm -rf /var/lib/apt/lists/*
+ 
+RUN apt-get update
+RUN apt-get install -y apt-utils
+RUN apt-get install -y libgdiplus
+RUN apt-get install -y libc6-dev 
+RUN ln -s /usr/lib/libgdiplus.so/usr/lib/gdiplus.dll
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
