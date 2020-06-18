@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParteiPDFGenerator", "ParteiPDFGenerator\ParteiPDFGenerator.csproj", "{C13DC1A8-0A28-4912-AD65-1D1DE60B179B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParteiPDFGenerator", "ParteiPDFGenerator\ParteiPDFGenerator.csproj", "{28F3DF36-7026-4E40-B34D-F13DE0CE2214}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C13DC1A8-0A28-4912-AD65-1D1DE60B179B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C13DC1A8-0A28-4912-AD65-1D1DE60B179B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C13DC1A8-0A28-4912-AD65-1D1DE60B179B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C13DC1A8-0A28-4912-AD65-1D1DE60B179B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F3DF36-7026-4E40-B34D-F13DE0CE2214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F3DF36-7026-4E40-B34D-F13DE0CE2214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F3DF36-7026-4E40-B34D-F13DE0CE2214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F3DF36-7026-4E40-B34D-F13DE0CE2214}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {3A1C96F9-D56A-46B4-99A2-F27E1F1C01B6}
+		SolutionGuid = {F3DD12E2-A7B0-409E-AF02-29D4543FEC0E}
 	EndGlobalSection
 EndGlobal
