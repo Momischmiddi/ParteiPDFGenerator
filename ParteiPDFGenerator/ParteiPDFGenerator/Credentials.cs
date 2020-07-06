@@ -7,6 +7,6 @@ namespace CloudbobsPDFRendering
 {
     public class Credentials
     {
-        public static string BlobServiceClientKey = "DefaultEndpointsProtocol=https;AccountName=parteiblobstorage;AccountKey=lNEa2S8nGcw79mhqVl2yboN3egjUmeDv3DZbp59RRMObN6+vustDgBfhVP71tO33UyzNSnt/xF4eBojIwz3BtA==;EndpointSuffix=core.windows.net";
+        public static string BlobServiceClientKey = "DefaultEndpointsProtocol=https;AccountName=parteiblobstorage;AccountKey=LrRrCznOx4SFyeGeBGOW53ndE43LQWN2wFmoIgjA7AobLvECbGVU8iLuoEXXmV8zv+Bl2B3nosGs+RdhZ9hwcQ==;EndpointSuffix=core.windows.net";
     }
 }
