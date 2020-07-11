@@ -14,6 +14,7 @@
       "launchBrowser": true,
       "launchUrl": "swagger/index.html",
       "environmentVariables": {
+        "BLOB_STORAGE_KEY": "DefaultEndpointsProtocol=https;AccountName=parteiblobstorage;AccountKey=LrRrCznOx4SFyeGeBGOW53ndE43LQWN2wFmoIgjA7AobLvECbGVU8iLuoEXXmV8zv+Bl2B3nosGs+RdhZ9hwcQ==;EndpointSuffix=core.windows.net",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },

@@ -60,11 +60,11 @@ namespace CloudbobsPDFRendering.PDFCreators
             }
         }
 
-        public static void Setup()
+        public static void Setup(string key)
         {
             try
             {
-                var blobServiceClient = new BlobServiceClient(Credentials.BlobServiceClientKey);
+                var blobServiceClient = new BlobServiceClient(key);
                 pdfBlobContainer = blobServiceClient.GetBlobContainerClient("pdfs");
             }
             catch (Exception e)
